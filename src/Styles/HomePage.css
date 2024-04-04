@@ -1,0 +1,134 @@
+ * {
+     /* font-family: 'Inter', sans-serif; */
+     /* padding: 0;
+    margin: 0;  */
+    
+ }
+.introContainer{
+    padding: 75px 0 75px 0;
+}
+.mainTitle{
+    /* font-family: "Oswald", sans-serif !important; */
+    font-family: "Merriweather", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 5vw;
+}
+.squeeze{
+    margin-top: -25px;
+}
+.main{
+    color:var(--main);
+}
+.para{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    z-index: 2;
+}
+.imgHolder{
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    right: -50px;
+    opacity: 0.5;
+}
+.line{
+    margin: auto;
+    border-width: 2px;
+    border-color: var(--main);
+    opacity: 1;
+    border-style: dotted;
+}
+.bs{
+    background-image: linear-gradient(to right, var(--main) 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 20px 2px;
+    background-repeat: repeat-x;
+    width: 50%;
+    height: 5px;
+    margin: auto;
+}
+
+.Panle button{
+    /* box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.171); */
+    color: var(--white) !important;
+    transition: 0.5s;
+}
+.Panle button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.start{
+    font-family: "Merriweather", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2.5vw;
+}
+.end{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    z-index: 2;
+}
+.aboutme{
+    gap:35px;
+}
+
+.el{
+    font-family: "Playfair Display", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75vw;
+    transition: 0.5s;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+}
+.el:hover{
+    transition: 0.5s;
+    transform: scale(1.15);
+    transition-timing-function: ease-out;
+}
+
+.hardimg{
+    height: 100px;
+
+}
+
+.projectimg{
+    height: 25vw;
+    width: 40vw !important;
+    border-radius: 25px;
+}
+.projecttitle{
+    font-family: "Bebas Neue", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75vw;
+    color:#f0f6fd;
+}
+.projectdesc{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    text-align: justify;
+}
+.projectuse{
+    font-family: "Bebas Neue", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.6vw;
+    color:#f0f6fd;
+}
