@@ -1,13 +1,5 @@
+import React from 'react'
 import Container from 'react-bootstrap/Container';
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../Styles/HomePage.css";
-import React from 'react';
-import ParticleImage, {
-    ParticleOptions,
-    Vector,
-    forces,
-    ParticleForce
-  } from "react-particle-image";
 import { Button ,Avatar} from '@mui/material';
 import img from "../Images/Sellami.jpg";
 import me from "../Images/me.png";
@@ -66,152 +58,15 @@ import untitled7 from "../Images/blender/untitled7.png";
 import Wall1 from "../Images/blender/Wall1.png";
 import Wall2 from "../Images/blender/Wall2.png";
 import Taj2 from "../Images/blender/Taj2.png";
-import latex from "../Images/latex.png";
-import numpy from "../Images/numpy.png";
-import pytorch from "../Images/pytorch.png";
-import pandas from "../Images/pandas.png";
-import scikit from "../Images/scikit.png";
-import matplotlib from "../Images/matplotlib.png";
-import { Link, useMatch, useResolvedPath, useLocation } from "react-router-dom";
+const Projects = () => {
+  return (
+    <div>
 
-const particleOptions = {
-    filter: ({ x, y, image }) => {
-      // Get pixel
-      const pixel = image.get(x, y);
-      return (pixel.b > 100 && pixel.g > 100);
-    },
-    color: ({ x, y, image }) => "#dae0e8",
-    radius: () => Math.random() * 1.5 + 0.5,
-    mass: () => 40,
-    friction: () => 0.15,
-    
-  };
-const motionForce = (x, y) => {
-    return forces.disturbance(x, y, 5);
-  };
-function HomePage() {
-
-    return (
-        <>
-            <Container  className='d-flex flex-row justify-content-around introContainer'>
-                <div className='d-flex align-items-start para w-25'>
-                Welcome! I'm Sellami Mohammed Abdelhadi, a programmer with a passion for building creative IT solutions. Explore my portfolio to see how I can help turn your vision into reality.
+                <div className='d-flex flex-column align-items-center justify-content-center flex-fill mainTitle w-100 mt-5 mb-5 pb-5'>
+                    <span>My</span>
+                    <span className='main squeeze'>Projects</span>
                 </div>
-                <div className='d-flex flex-column align-items-center justify-content-center flex-fill mainTitle w-50'>
-                    <span>Informatiques</span>
-                    <span className='main squeeze'>Creations</span>
-                </div>
-                <div className='d-flex flex-column align-items-start justify-content-end para w-25'>
-                Unlock the potential of your data and unleash the power of AI. I offer a comprehensive suite of services designed to empower your business such as Data Analysis, AI Solutions, Website Creation.
-                <Link to={"/Contact"}>
-                <a className='but'>Lets talk</a>
-                </Link>
-                <div className='butline'></div>
-                </div>
-
-                <div className='imgHolder'>
-                    <ParticleImage
-                    src={img}
-                    scale={1}
-                    entropy={20}
-                    maxParticles={4200}
-                    particleOptions={particleOptions}
-                    mouseMoveForce={motionForce}
-                    touchMoveForce={motionForce}
-                    backgroundColor="transparent"
-                    />
-                </div>
-            </Container>
-            
-            <Container  className='d-flex flex-column justify-content-around  '>
-            <div className="d-flex flex-row justify-content-center align-items-center p-2 Panle flex-wrap">
-              <Button onClick={() => window.location.replace("/Home#aboutme")}>
-                About me
-              </Button>
-              <Button onClick={() => window.location.replace("/Home#hard")}>
-                Hard Skills
-              </Button>
-              <Button onClick={() => window.location.replace("/Home#soft")}>
-                Soft Skills
-              </Button>
-              <Button
-                onClick={() => window.location.replace("/Home#web")}
-              >
-                Websites
-              </Button>
-              <Button
-                onClick={() => window.location.replace("/Home#design")}
-              >
-                Designs
-              </Button>
-              <Button
-                onClick={() => window.location.replace("/Home#desktop")}
-              >
-                Desktop
-              </Button>
-              <Button
-                onClick={() => window.location.replace("/Home#blender")}
-              >
-                Blender
-              </Button>
-              
-            </div>
-            <div className='bs'></div>
-            </Container>
-            <Container id="aboutme" className='d-flex flex-row mb-5 mt-4 justify-content-between align-items-center aboutme' style={{height:"fit-content"}}>
-              <Avatar
-              alt="me"
-              src={me}
-              sx={{ width: 250, height: 250 }}
-              />
-              <div className='d-flex flex-column justify-content-center flex-fill'>
-                <span className='start'>
-                Sellami Mohammed Abdelhadi
-                </span>
-                <span className='end'>
-                AI and Data Analysis Enthusiast (Final Year) - University of Kasdi Merbah Ouargla, adept at solving complex programming problems with proficiency in various languages. Experienced in web development, with a some foundation for mobile and desktop application programming. Eager to leverage my AI and data analysis knowledge to tackle real-world challenges.
-                </span>
-              </div>
-            </Container>
-
-            <Container id="hard" className='d-flex flex-column align-items-center justify-content-start mb-5 hard w-100' style={{gap:"25px", height:"fit-content"}}>
-            <span className='start'>
-                Hard Skills
-                </span>
-                <div className='d-flex flex-row flex-wrap align-items-center justify-content-center w-100' style={{gap:"10px"}}>
-                <img alt="python" src={pythonimg} className='hardimg'/>
-                <img alt="react" src={reactimg} className='hardimg'/>
-                <img alt="html" src={htmlimg} className='hardimg'/>
-                <img alt="css" src={cssimg} className='hardimg'/>
-                <img alt="js" src={jsimg} className='hardimg'/>
-                <img alt="blender" src={blenderimg} className='hardimg'/>
-                <img alt="c" src={cimg} className='hardimg'/>
-                <img alt="figma" src={figmaimg} className='hardimg'/>
-                <img alt="java" src={javaimg} className='hardimg'/>
-                <img alt="flask" src={flaskimg} className='hardimg'/>
-                <img alt="latex" src={latex} className='hardimg'/>
-                <img alt="numpy" src={numpy} className='hardimg'/>
-                <img alt="pytorch" src={pytorch} className='hardimg'/>
-                <img alt="pandas" src={pandas} className='hardimg'/>
-                <img alt="matplotlib" src={matplotlib} className='hardimg'/>
-                <img alt="scikit" src={scikit} className='hardimg'/>
-                </div>
-            </Container>
-
-            <Container id="soft" className='d-flex flex-column align-items-center justify-content-start mb-5 pb-5 flex-wrap soft' style={{gap:"25px",height:"fit-content"}}>
-            <span className='start'>
-                Soft Skills
-                </span>
-                <div className='d-flex flex-row flex-wrap w-100 align-items-center justify-content-center' style={{gap:"25px"}}>
-                  <span className='el'> Effective communication </span>
-                  <span className='el'> Team Work </span>
-                  <span className='el'> Fast Learning </span>
-                  <span className='el'> Time management </span>
-                </div>
-            </Container>
-            
-
-            <Container id="web" className='d-flex flex-column align-items-center justify-content-start  flex-wrap web' style={{gap:"25px"}}>
+        <Container id="web" className='d-flex flex-column align-items-center justify-content-start  flex-wrap web' style={{gap:"25px"}}>
               <span className='start'>
                 Websites projects
                 </span>
@@ -492,20 +347,9 @@ function HomePage() {
 
               </div>
             </Container>
-
             <div style={{height:"25px"}}></div>
-            <div id="blender" className='d-flex flex-column align-items-center justify-content-start  flex-wrap colored p-5' >
-              <span className='start' style={{color:"white"}}>
-              Let's turn your dreams and ideas into reality
-                </span>
-                <Link to={"/Contact"}>
-                <a className='but'>Lets talk</a>
-                </Link>
-                
-                <div className='butline'></div>
-            </div>
-        </>
-    );
+    </div>
+  )
 }
 
-export default HomePage
+export default Projects

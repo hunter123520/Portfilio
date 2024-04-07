@@ -5,7 +5,8 @@
     
  }
 .introContainer{
-    padding: 75px 0 75px 0;
+    padding: 25px 0 75px 0;
+    height: 90vh;
 }
 .mainTitle{
     /* font-family: "Oswald", sans-serif !important; */
@@ -87,7 +88,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.75vw;
+    font-size: 27px;
     transition: 0.5s;
     transition-timing-function: ease-in;
     cursor: pointer;
@@ -143,7 +144,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.75vw;
+    font-size: 27px;
     color:#f0f6fd;
 }
 .projectdesc{
@@ -159,7 +160,7 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.6vw;
+    font-size: 25px;
     color:#f0f6fd;
 }
 
@@ -183,4 +184,37 @@
     background-color: var(--second);
     color: var(--second);
     width: 100px;
+}
+
+.iconbutton{
+    color: var(--white) !important;
+    transition: 0.5s !important;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+.iconbutton:hover{
+    color: var(--second) !important;
+    transition: 0.5s !important;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+ 
+@media (max-width: 960px) {
+    .projectHolder{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .projectimg{
+        height: 75vw !important;
+        width: 90vw !important;
+    }
+    .projectcontent{
+        width: 90% !important;
+    }
+    .para{
+        visibility: hidden;
+    }
+    .mainTitle{
+        font-size:50px !important;
+    }
 }

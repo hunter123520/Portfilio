@@ -6,6 +6,9 @@ import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/Header.css";
 import { Link, useMatch, useResolvedPath, useLocation } from "react-router-dom";
+import logo from "../Images/logo1.png";
+import { Facebook, Twitter, GitHub, LinkedIn} from "@mui/icons-material";
+import IconButton from '@mui/material/IconButton';
 // import WhiteLG from "../Images/WhiteLG.png";
 // import univ_logo from "../Images/logo.png";
 function CustomLink({ to, children, ...props }) {
@@ -38,32 +41,27 @@ function Header() {
           <Navbar.Brand href="/Home">
             {/* <img
               className="logo"
-              src={path.pathname.includes("/About") ? WhiteLG : univ_logo}
+              src={logo}
               alt="logo"
             /> */}
+            
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto align-end w-100 justify-content-end">
+            <Nav className="me-auto align-end w-100 justify-content-center">
               <CustomLink className="link_page" to="/Home">
                 Home
               </CustomLink>
-              <CustomLink className="link_page" to="/Recycle">
-              Recycle
+              <CustomLink className="link_page" to="/Projects">
+              Projects
               </CustomLink>
-              <CustomLink className="link_page" to="/Assistant">
-              Assistant
+              <CustomLink className="link_page" to="/FAQs">
+              FAQs
               </CustomLink>
-              <CustomLink className="link_page" to="/Industries">
-                For Industries
+              <CustomLink className="link_page" to="/Contact">
+               Contact
               </CustomLink>
               
-              <CustomLink className="link_page" to="/About">
-                About
-              </CustomLink>
-              <CustomLink className="link_page " to="/Contact">
-                Contact us
-              </CustomLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

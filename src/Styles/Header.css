@@ -73,7 +73,7 @@
 }
 
 .active {
-  color: #116a7b;
+  color: var(--second);
   font-weight: 600;
   z-index: 10;
 }
