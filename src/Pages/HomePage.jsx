@@ -30,6 +30,43 @@ import roll from "../Images/roll.png";
 import loginimg from "../Images/login.png";
 import timetable from "../Images/timetable.png";
 import signin from "../Images/signin.png";
+import book from "../Images/book.png";
+import privateschool from "../Images/privateschool.png";
+import comp from "../Images/Comp.png";
+import systemexpert from "../Images/systemexpert.png";
+import b1 from "../Images/blender/b1.png";
+import b2 from "../Images/blender/b2.png";
+import b3 from "../Images/blender/b3.png";
+import b4 from "../Images/blender/b4.png";
+import b5 from "../Images/blender/b5.png";
+import GlassCop from "../Images/blender/GlassCop4.png";
+import LargeSpoon from "../Images/blender/LargeSpoon.png";
+import fork from "../Images/blender/Fork1.png";
+import knife from "../Images/blender/Knife3.png";
+import M9la from "../Images/blender/M9la.png";
+import Tbsi2 from "../Images/blender/Tbsi2.png";
+import Spoon1 from "../Images/blender/Spoon1.png";
+import Sinia from "../Images/blender/Sinia.png";
+import Bed1 from "../Images/blender/Bed1.png";
+import Bed4 from "../Images/blender/Bed4.png";
+import Carpet from "../Images/blender/Carpet.png";
+import CoffCup5 from "../Images/blender/CoffCup5.png";
+import CofferGlass2 from "../Images/blender/CofferGlass2.png";
+import Drawer4 from "../Images/blender/Drawer4.png";
+import FirstSceneTea from "../Images/blender/FirstSceneTea.png";
+import Kas1 from "../Images/blender/Kas1.png";
+import Korsy from "../Images/blender/Korsy.png";
+import Lamp9 from "../Images/blender/Lamp9.png";
+import Lamp10 from "../Images/blender/Lamp10.png";
+import Mond from "../Images/blender/Mond.png";
+import photocadre from "../Images/blender/photocadre.png";
+import Piano2 from "../Images/blender/Piano2.png";
+import s1 from "../Images/blender/s1.png";
+import Sa7n1 from "../Images/blender/Sa7n1.png";
+import untitled7 from "../Images/blender/untitled7.png";
+import Wall1 from "../Images/blender/Wall1.png";
+import Wall2 from "../Images/blender/Wall2.png";
+import Taj2 from "../Images/blender/Taj2.png";
 // const particleOptions = {
 //     filter: ({ x, y, image }) => {
 //       // Get pixel
@@ -212,6 +249,24 @@ function HomePage() {
                       </Button>
                   </div>
                </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={book}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                      Book Store
+                      </span>
+                      <span className='projectdesc'>
+                      This was one of my previous projects at university. It is a website for displaying and purchasing books. I worked on this project with my university colleague, who was responsible for managing the database, and I did the rest of the work related to the main interface.
+                      </span>
+                      <span className='projectuse'>
+                      HTML, CSS, JS, PHP
+                      </span>
+                      <Button variant='contained' href="http://bookstoredaw.infinityfreeapp.com/index.php" target="_blank">
+                        Live Website
+                      </Button>
+                  </div>
+               </div>
             </Container>
 
             <div style={{height:"25px"}}></div>
@@ -317,12 +372,116 @@ function HomePage() {
                </div>
             </Container>
 
+            <div style={{height:"25px"}}></div>
 
             <Container id="desktop" className='d-flex flex-column align-items-center justify-content-start  flex-wrap desktop' style={{gap:"25px"}}>
               <span className='start'>
                 Desktop projects
                 </span>
+
+
+                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={privateschool}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                      Private School Manager
+                      </span>
+                      <span className='projectdesc'>
+                      
+                      This was my and my colleague's graduation project in the bachelor's degree. We created this program that allows you to manage a private school with all its needs, from teachers and students to program management. This program contains many details and cases, which makes it one of the biggest projects I have ever completed.
+                      </span>
+                      <span className='projectuse'>
+                      JAVAFX, CSS
+                      </span>
+                      
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={systemexpert}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                      System Expert Manager
+                      </span>
+                      <span className='projectdesc'>
+                      This was one of the most enjoyable programs to create, and it was our first step towards artificial intelligence. This program allows you to create an intelligent system, with the ability to write new elements and laws, which allows the intelligent system to deal with inputs in various ways.
+                      </span>
+                      <span className='projectuse'>
+                      JAVAFX, CSS
+                      </span>
+                  </div>
+               </div>
+                
+
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={comp}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                      Simple Compilation System
+                      </span>
+                      <span className='projectdesc'>
+                      This was one of the programs that was completed in university, in which we learned how the computer deals with programming commands. We implemented a simple simulation of it with mathematical operations. This is considered one of my first actual programs, in which I learned design. </span>
+                      <span className='projectuse'>
+                      JAVAFX, CSS
+                      </span>
+                      
+                  </div>
+               </div>
+
             </Container>
+
+
+            <Container id="blender" className='d-flex flex-column align-items-center justify-content-start  flex-wrap blender' style={{gap:"25px"}}>
+              <span className='start'>
+                Blender projects
+                </span>
+              <div className=' justify-content-center blendparent' style={{gap:"25px",width:"100%"}}>
+                <div className='imgholder' ><img src={b1}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"3",gridRow:"1/3"}}><img src={Wall1}  alt="" className='blendimg'/></div>
+                <div className='imgholder' style={{gridColumn:"1/2"}}><img src={GlassCop}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"1",gridRow:"3/5"}}><img src={LargeSpoon}  alt="" className='blendimg'/></div>
+                <div className='imgholder' style={{gridColumn:"2/4",gridRow:"3"}}><img src={b3}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={M9la}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={knife}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Tbsi2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Spoon1}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"1/4",gridRow:"5/7"}}><img src={b2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Sinia}  alt="" className='blendimg'/></div>
+                <div className='imgholder '><img src={Bed1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={CoffCup5}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={CofferGlass2}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"3",gridRow:"9/11"}}><img src={s1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Mond}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Kas1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Korsy}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={fork}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Lamp9}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Sa7n1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Wall2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={untitled7}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={b4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={photocadre}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={FirstSceneTea}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Bed4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Carpet}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Piano2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={b5}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Drawer4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Lamp10}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><img src={Taj2}  alt="" className='blendimg'/></div>
+                
+
+              </div>
+            </Container>
+
+            <div style={{height:"25px"}}></div>
+            <div id="blender" className='d-flex flex-column align-items-center justify-content-start  flex-wrap colored p-5' >
+              <span className='start' style={{color:"white"}}>
+              Let's turn your dreams and ideas into reality
+                </span>
+                <a className='but' href='#'>Lets talk</a>
+                <div className='butline'></div>
+            </div>
         </>
     );
 }
