@@ -13,7 +13,7 @@ function App() {
     <>
     {/* <Header/> */}
     <PageContent />
-    {/* <Footer/> */}
+    <Footer/>
     </> 
   );
 }
