@@ -70,6 +70,7 @@
     font-weight: 800;
     font-style: normal;
     font-size: 2.5vw;
+    font-size: 40px;
 }
 .end{
     font-family: "Playfair Display", serif;
@@ -216,6 +217,9 @@
     }
     .mainTitle{
         font-size:50px !important;
+    }
+    .aboutme{
+        flex-direction: column !important;
     }
 }
 
