@@ -73,6 +73,7 @@ import pandas from "../Images/pandas.png";
 import scikit from "../Images/scikit.png";
 import matplotlib from "../Images/matplotlib.png";
 import { Link, useMatch, useResolvedPath, useLocation } from "react-router-dom";
+import CV from "../Pdfs/CV.pdf";
 
 const particleOptions = {
     filter: ({ x, y, image }) => {
@@ -171,6 +172,8 @@ function HomePage() {
                 <span className='end'>
                 AI and Data Analysis Enthusiast (Final Year) - University of Kasdi Merbah Ouargla, adept at solving complex programming problems with proficiency in various languages. Experienced in web development, with a some foundation for mobile and desktop application programming. Eager to leverage my AI and data analysis knowledge to tackle real-world challenges.
                 </span>
+               
+                <Button className='cvbtn mt-4' variant="contained" href={CV} download={"Sellami-CV"} target="_blank" rel="noreferrer" > Download my CV</Button>
               </div>
             </Container>
 
