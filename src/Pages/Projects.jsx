@@ -58,6 +58,25 @@ import untitled7 from "../Images/blender/untitled7.png";
 import Wall1 from "../Images/blender/Wall1.png";
 import Wall2 from "../Images/blender/Wall2.png";
 import Taj2 from "../Images/blender/Taj2.png";
+
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import pureimg from "../Images/pureenergy.png"
+import cyberimg from "../Images/CyberBull.png"
+import intrimg from "../Images/intr.jpg"
+import corrimg from "../Images/corr.png"
+import earimg from "../Images/ear.png"
+import medimg from "../Images/med.jpg"
+import babyimg from "../Images/baby.jpg"
+import frimg from "../Images/fr.png"
+import egimg from "../Images/eg.jpg"
+import arimg from "../Images/ar.png"
+import gsimg from "../Images/gs.jpg"
+import twimg from "../Images/tw.png"
+import fcimg from "../Images/fc.jpg"
+import indimg from "../Images/ind.jpg"
+import restimg from "../Images/rest.png"
+import itimg from "../Images/it.png"
 const Projects = () => {
   return (
     <div>
@@ -66,10 +85,310 @@ const Projects = () => {
                     <span>My</span>
                     <span className='main squeeze'>Projects</span>
                 </div>
+
+
+
         <Container id="web" className='d-flex flex-column align-items-center justify-content-start  flex-wrap web' style={{gap:"25px"}}>
+              <span className='start'>
+                AI projects
+                </span>
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={cyberimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Cyberbullying Detection
+                      </span>
+                      <span className='projectdesc'>
+                      This project enhances cyberbullying detection by combining 1D Convolutional Neural Networks (CNNs) and Bidirectional Encoder Representations from Transformers (BERT) with a sliding window bigram preprocessing technique.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow, NLTK
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Cyber-Bullying-Detection" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={intrimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Intrusion Detection using Federated Learning
+                      </span>
+                      <span className='projectdesc'>
+                      This project proposes a privacy-preserving intrusion detection system using Federated Learning with CNNs and random resampling. The system trains a global model on distributed data without sharing sensitive information, enhancing security and privacy.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Pytorch, Flower
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Federated-Intrusion-Detection" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={corrimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Corrosion Deffect Detection
+                      </span>
+                      <span className='projectdesc'>
+                      This project explores the use of lightweight 1D CNNs for corrosion defect detection in materials. By leveraging the efficiency and accuracy of these models, the goal is to develop a practical solution for early detection and prevention of corrosion-related damage.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Corrosion-Deffect-Detection" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={earimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Ear Recognition
+                      </span>
+                      <span className='projectdesc'>
+                      This project addresses the challenges of the AWE dataset for ear recognition by proposing a two-phase learning approach using VGG16. The first phase involves pre-training on a large dataset, followed by fine-tuning on the AWE dataset. This approach aims to improve the accuracy and robustness of ear recognition systems.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Pytorch
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Ear-Recognition" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={medimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Medical Cost Prediction
+                      </span>
+                      <span className='projectdesc'>
+                      This project focuses on developing highly accurate medical cost prediction models using deep learning, specifically Multi-Layer Perceptrons (MLPs). By leveraging the power of deep learning, the goal is to create robust models that can accurately predict medical costs, aiding in financial planning and resource allocation.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Medical-Cost-Prediction" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={babyimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Baby Crying Classification
+                      </span>
+                      <span className='projectdesc'>
+                      This project explores the use of deep learning to classify infant cries based on their underlying needs, such as hunger, pain, or tiredness. By analyzing audio signals, the goal is to develop a system that can accurately interpret infant cries, providing valuable insights for caregivers.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Baby-Crying-Classification" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={frimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Fruit Ripeness Detection
+                      </span>
+                      <span className='projectdesc'>
+                      This project addresses the challenge of accurately detecting the ripeness of fruits and vegetables using deep learning techniques. By analyzing visual features such as color, texture, and shape, the goal is to develop a system that can reliably assess ripeness, improving food quality and reducing waste.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Ripeness-Detection" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={egimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        English Sign Language Detection
+                      </span>
+                      <span className='projectdesc'>
+                      This project focuses on developing deep learning models to accurately recognize hand gestures and sign language, specifically for English alphabets. By analyzing video or image data, the goal is to create systems that can interpret hand movements and translate them into text, enabling communication for individuals with hearing impairments or language barriers.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/English-Sign-Language-Detection" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={arimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                       Arabic Gesture Prediction
+                      </span>
+                      <span className='projectdesc'>
+                      This project aims to develop deep learning models capable of recognizing Arabic hand gestures and sign language. By analyzing video or image data of hand movements, the goal is to create systems that can accurately interpret and translate Arabic sign language into text, improving communication for individuals with hearing impairments or language barriers.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Arabic-Gesture-Prediction" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={gsimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Gestational Diabetes Classification using Federated Learning
+                      </span>
+                      <span className='projectdesc'>
+                      This project explores the use of Federated Learning for diabetes classification, ensuring privacy by training a model on distributed data without sharing sensitive patient information. By collaboratively learning from multiple institutions, the goal is to improve the accuracy and efficiency of diabetes diagnosis while safeguarding patient privacy.  </span>
+                      <span className='projectuse'>
+                      Python, Pytorch, Flower
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Gestational-Diabetes-Classification-using-Federated-Learning" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={twimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Tweets Classification
+                      </span>
+                      <span className='projectdesc'>
+                      This project involves developing a deep learning model to classify tweets into different categories, such as positive, negative, or neutral sentiment, or specific topics like politics, sports, or technology. This can be achieved by leveraging techniques like text preprocessing, feature extraction, and advanced neural network architectures like BERT or LSTM.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow, NLTK
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Tweets-Classification" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={fcimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Fake News Classification
+                      </span>
+                      <span className='projectdesc'>
+                      This project focuses on developing a deep learning model to classify news articles as either real or fake. By analyzing the text content, the model can identify patterns and indicators of fake news, such as biased language, misinformation, or misleading headlines. This can help combat the spread of false information and promote accurate news consumption.</span>
+                      <span className='projectuse'>
+                      Python, Tensorflow, NLTK
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Fake-News-Classification" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={indimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Indian Diabetes Classification
+                      </span>
+                      <span className='projectdesc'>
+                      This project involves developing a deep learning model to predict the onset of diabetes in individuals based on various health parameters like glucose levels, blood pressure, age, and BMI. By analyzing large datasets of patient records, the model can identify patterns and risk factors associated with diabetes, enabling early detection and preventive measures.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Tensorflow
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Indian-Diabetes-Classification" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
+               </Container>
+
+               <div style={{height:"100px"}}></div>
+            
+
+            <Container id="web" className='d-flex flex-column align-items-center justify-content-start  flex-wrap web' style={{gap:"25px"}}>
               <span className='start'>
                 Websites projects
                 </span>
+
+                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse  projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={pureimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Pure Energy
+                      </span>
+                      <span className='projectdesc'>
+                      Pure Energy is an innovative solution designed to optimize the performance and efficiency of solar energy fields. By leveraging advanced drone technology and AI-driven analysis, our system empowers operators to proactively identify and address potential issues, maximizing energy output and minimizing downtime.
+                      </span>
+                      <span className='projectuse'>
+                      REACT, CSS, FLASK, Huawei ModelArts
+                      </span>
+                      <Button variant='contained' href="https://pure-energy-demo.netlify.app" target="_blank">
+                        Live Website
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={itimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        IT Services Website
+                      </span>
+                      <span className='projectdesc'>
+                      This project involves creating a web application that showcases the IT services offered by a company. The website will provide information about the company's expertise, services, and solutions.
+                      </span>
+                      <span className='projectuse'>
+                      REACT, CSS
+                      </span>
+                      <Button variant='contained' href="https://itservices-techtune.netlify.app/Home" target="_blank">
+                        Live Website
+                      </Button>
+                  </div>
+               </div>
+
+               <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={restimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Resturant Delevery Website
+                      </span>
+                      <span className='projectdesc'>
+                      This project involves creating a web application that showcases the functionality of a restaurant delivery website. The demo will highlight the key features and user interface without the actual functionality of placing orders or processing payments.
+                      </span>
+                      <span className='projectuse'>
+                      REACT, CSS
+                      </span>
+                      <Button variant='contained' href="https://food-delivery-techtune.netlify.app/Homep" target="_blank">
+                        Live Website
+                      </Button>
+                  </div>
+               </div>
+
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
                   <img src={algebra}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
@@ -143,7 +462,7 @@ const Projects = () => {
                </div>
             </Container>
 
-            <div style={{height:"25px"}}></div>
+            <div style={{height:"100px"}}></div>
 
             <Container id="design" className='d-flex flex-column align-items-center justify-content-start  flex-wrap design' style={{gap:"25px"}}>
               <span className='start'>
@@ -246,7 +565,7 @@ const Projects = () => {
                </div>
             </Container>
 
-            <div style={{height:"25px"}}></div>
+            <div style={{height:"100px"}}></div>
 
             <Container id="desktop" className='d-flex flex-column align-items-center justify-content-start  flex-wrap desktop' style={{gap:"25px"}}>
               <span className='start'>
@@ -303,6 +622,8 @@ const Projects = () => {
                </div>
 
             </Container>
+
+            <div style={{height:"100px"}}></div>
 
 
             <Container id="blender" className='d-flex flex-column align-items-center justify-content-start  flex-wrap blender' style={{gap:"25px"}}>
