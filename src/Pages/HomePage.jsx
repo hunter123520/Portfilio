@@ -93,6 +93,7 @@ import fcimg from "../Images/fc.jpg"
 import indimg from "../Images/ind.jpg"
 import restimg from "../Images/rest.png"
 import itimg from "../Images/it.png"
+import mlrimg from "../Images/mlr.jpg"
 const particleOptions = {
     filter: ({ x, y, image }) => {
       // Get pixel
@@ -246,6 +247,25 @@ function HomePage() {
               <span className='start'>
                 AI projects
                 </span>
+
+                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
+                  <img src={mlrimg}  alt="" className='projectimg'/>
+                  <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
+                        <span className='projecttitle'>
+                        Malaria Classification using Federated Learning
+                      </span>
+                      <span className='projectdesc'>
+                      This project proposes a privacy-preserving malaria detection system using Federated Learning with Pretrained models and ensemble learning. The system trains a global model on distributed data without sharing sensitive information, enhancing security and privacy.
+                      </span>
+                      <span className='projectuse'>
+                      Python, Pytorch, Flower
+                      </span>
+                      <Button variant='contained' href="https://github.com/hunter123520/Malaria-Classification-using-Federated-Learning" target="_blank">
+                        Source Code
+                      </Button>
+                  </div>
+               </div>
+
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
                   <img src={cyberimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
