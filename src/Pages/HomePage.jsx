@@ -515,8 +515,7 @@ function HomePage() {
                 </span>
 
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse  projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  {/* <img src={pureimg}  alt="" className='projectimg'/> */}
-                  <Img src={require('../Images/pureenergy.png')} webp sizes={[1, 2]}  />
+                  <img src={pureimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Pure Energy
