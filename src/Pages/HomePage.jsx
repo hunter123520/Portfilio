@@ -515,7 +515,8 @@ function HomePage() {
                 </span>
 
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse  projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img src={pureimg} webp sizes={[400, 800]} alt="" className='projectimg'/>
+                  {/* <img src={pureimg}  alt="" className='projectimg'/> */}
+                  <Img src={require('../Images/pureenergy.png')} webp sizes={[1, 2]}  />
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Pure Energy
@@ -533,7 +534,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={itimg}  alt="" className='projectimg'/>
+                  <Img src={itimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         IT Services Website
@@ -551,7 +552,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={restimg}  alt="" className='projectimg'/>
+                  <Img src={restimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Resturant Delevery Website
@@ -569,7 +570,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={algebra}  alt="" className='projectimg'/>
+                  <Img src={algebra}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Easy Algebra
@@ -587,7 +588,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={stringimg}  alt="" className='projectimg'/>
+                  <Img src={stringimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       String Operations
@@ -605,7 +606,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={garbage}  alt="" className='projectimg'/>
+                  <Img src={garbage}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Smart Recycle
@@ -623,7 +624,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={book}  alt="" className='projectimg'/>
+                  <Img src={book}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Book Store
@@ -648,7 +649,7 @@ function HomePage() {
                 Design projects
                 </span>
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={buss}  alt="" className='projectimg'/>
+                  <Img src={buss}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Buss Application
@@ -667,7 +668,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={roll}  alt="" className='projectimg'/>
+                  <Img src={roll}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Rolling wheel
@@ -687,7 +688,7 @@ function HomePage() {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={loginimg}  alt="" className='projectimg'/>
+                  <Img src={loginimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       School Login
@@ -706,7 +707,7 @@ function HomePage() {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={timetable}  alt="" className='projectimg'/>
+                  <Img src={timetable}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       School Time Management
@@ -726,7 +727,7 @@ function HomePage() {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={signin}  alt="" className='projectimg'/>
+                  <Img src={signin}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Signin / Signup Pages
@@ -753,7 +754,7 @@ function HomePage() {
 
 
                 <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={privateschool}  alt="" className='projectimg'/>
+                  <Img src={privateschool}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Private School Manager
@@ -770,7 +771,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={systemexpert}  alt="" className='projectimg'/>
+                  <Img src={systemexpert}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       System Expert Manager
@@ -786,7 +787,7 @@ function HomePage() {
                 
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <Img webp sizes={[400, 800]} src={comp}  alt="" className='projectimg'/>
+                  <Img src={comp}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Simple Compilation System
@@ -809,8 +810,8 @@ function HomePage() {
                 Blender projects
                 </span>
               <div className=' justify-content-center blendparent' style={{gap:"25px",width:"100%"}}>
-                <div className='imgholder' ><Img webp sizes={[400, 800]} src={b1}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"3",gridRow:"1/3"}}><Img webp sizes={[400, 800]} src={Wall1}  alt="" className='blendimg'/></div>
+                <div className='imgholder' ><Img src={b1}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"3",gridRow:"1/3"}}><Img src={Wall1}  alt="" className='blendimg'/></div>
                 <div className='imgholder' style={{gridColumn:"1/2"}}><Img src={GlassCop}  alt="" className='blendimg'/></div>
                 <div className='imgholder double' style={{gridColumn:"1",gridRow:"3/5"}}><Img src={LargeSpoon}  alt="" className='blendimg'/></div>
                 <div className='imgholder' style={{gridColumn:"2/4",gridRow:"3"}}><Img src={b3}  alt="" className='blendimg'/></div>
