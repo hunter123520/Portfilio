@@ -1,18 +1,6 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import { Button ,Avatar} from '@mui/material';
-import img from "../Images/Sellami.jpg";
-import me from "../Images/me.png";
-import pythonimg from "../Images/python.png";
-import reactimg from "../Images/react.png";
-import htmlimg from "../Images/html.png";
-import cssimg from "../Images/css.png";
-import jsimg from "../Images/js.png";
-import blenderimg from "../Images/blender.png";
-import figmaimg from "../Images/figma.png";
-import cimg from "../Images/c.png";
-import javaimg from "../Images/java.png";
-import flaskimg from "../Images/flask.png";
 import algebra from "../Images/algebradark.png";
 import stringimg from "../Images/StringDark2.png";
 import garbage from "../Images/garbagewhite.png";
@@ -78,6 +66,7 @@ import indimg from "../Images/ind.jpg"
 import restimg from "../Images/rest.png"
 import itimg from "../Images/it.png"
 import mlrimg from "../Images/mlr.jpg"
+import Img from 'react-optimized-image';
 const Projects = () => {
   return (
     <div>
@@ -95,7 +84,7 @@ const Projects = () => {
                 </span>
 
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={mlrimg}  alt="" className='projectimg'/>
+                  <Img src={mlrimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Malaria Classification using Federated Learning
@@ -113,7 +102,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={cyberimg}  alt="" className='projectimg'/>
+                  <Img src={cyberimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Cyberbullying Detection
@@ -131,7 +120,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={intrimg}  alt="" className='projectimg'/>
+                  <Img src={intrimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Intrusion Detection using Federated Learning
@@ -149,7 +138,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={corrimg}  alt="" className='projectimg'/>
+                  <Img src={corrimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Corrosion Deffect Detection
@@ -167,7 +156,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={earimg}  alt="" className='projectimg'/>
+                  <Img src={earimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Ear Recognition
@@ -185,7 +174,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={medimg}  alt="" className='projectimg'/>
+                  <Img src={medimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Medical Cost Prediction
@@ -203,7 +192,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={babyimg}  alt="" className='projectimg'/>
+                  <Img src={babyimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Baby Crying Classification
@@ -221,7 +210,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={frimg}  alt="" className='projectimg'/>
+                  <Img src={frimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Fruit Ripeness Detection
@@ -239,7 +228,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={egimg}  alt="" className='projectimg'/>
+                  <Img src={egimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         English Sign Language Detection
@@ -258,7 +247,7 @@ const Projects = () => {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={arimg}  alt="" className='projectimg'/>
+                  <Img src={arimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                        Arabic Gesture Prediction
@@ -276,7 +265,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={gsimg}  alt="" className='projectimg'/>
+                  <Img src={gsimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Gestational Diabetes Classification using Federated Learning
@@ -293,7 +282,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={twimg}  alt="" className='projectimg'/>
+                  <Img src={twimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Tweets Classification
@@ -311,7 +300,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={fcimg}  alt="" className='projectimg'/>
+                  <Img src={fcimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Fake News Classification
@@ -328,7 +317,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={indimg}  alt="" className='projectimg'/>
+                  <Img src={indimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Indian Diabetes Classification
@@ -356,7 +345,7 @@ const Projects = () => {
                 </span>
 
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse  projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={pureimg}  alt="" className='projectimg'/>
+                  <Img src={pureimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Pure Energy
@@ -374,7 +363,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={itimg}  alt="" className='projectimg'/>
+                  <Img src={itimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         IT Services Website
@@ -392,7 +381,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={restimg}  alt="" className='projectimg'/>
+                  <Img src={restimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Resturant Delevery Website
@@ -410,7 +399,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={algebra}  alt="" className='projectimg'/>
+                  <Img src={algebra}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Easy Algebra
@@ -428,7 +417,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={stringimg}  alt="" className='projectimg'/>
+                  <Img src={stringimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       String Operations
@@ -446,7 +435,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={garbage}  alt="" className='projectimg'/>
+                  <Img src={garbage}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Smart Recycle
@@ -464,7 +453,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={book}  alt="" className='projectimg'/>
+                  <Img src={book}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Book Store
@@ -489,7 +478,7 @@ const Projects = () => {
                 Design projects
                 </span>
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={buss}  alt="" className='projectimg'/>
+                  <Img src={buss}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Buss Application
@@ -508,7 +497,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={roll}  alt="" className='projectimg'/>
+                  <Img src={roll}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Rolling wheel
@@ -528,7 +517,7 @@ const Projects = () => {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={loginimg}  alt="" className='projectimg'/>
+                  <Img src={loginimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       School Login
@@ -547,7 +536,7 @@ const Projects = () => {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={timetable}  alt="" className='projectimg'/>
+                  <Img src={timetable}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       School Time Management
@@ -567,7 +556,7 @@ const Projects = () => {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={signin}  alt="" className='projectimg'/>
+                  <Img src={signin}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Signin / Signup Pages
@@ -594,7 +583,7 @@ const Projects = () => {
 
 
                 <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={privateschool}  alt="" className='projectimg'/>
+                  <Img src={privateschool}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Private School Manager
@@ -611,7 +600,7 @@ const Projects = () => {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={systemexpert}  alt="" className='projectimg'/>
+                  <Img src={systemexpert}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       System Expert Manager
@@ -627,7 +616,7 @@ const Projects = () => {
                 
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={comp}  alt="" className='projectimg'/>
+                  <Img src={comp}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Simple Compilation System
@@ -651,39 +640,39 @@ const Projects = () => {
                 Blender projects
                 </span>
               <div className=' justify-content-center blendparent' style={{gap:"25px",width:"100%"}}>
-                <div className='imgholder' ><img src={b1}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"3",gridRow:"1/3"}}><img src={Wall1}  alt="" className='blendimg'/></div>
-                <div className='imgholder' style={{gridColumn:"1/2"}}><img src={GlassCop}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"1",gridRow:"3/5"}}><img src={LargeSpoon}  alt="" className='blendimg'/></div>
-                <div className='imgholder' style={{gridColumn:"2/4",gridRow:"3"}}><img src={b3}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={M9la}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={knife}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Tbsi2}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Spoon1}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"1/4",gridRow:"5/7"}}><img src={b2}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Sinia}  alt="" className='blendimg'/></div>
-                <div className='imgholder '><img src={Bed1}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={CoffCup5}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={CofferGlass2}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"3",gridRow:"9/11"}}><img src={s1}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Mond}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Kas1}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Korsy}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={fork}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Lamp9}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Sa7n1}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Wall2}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={untitled7}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={b4}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={photocadre}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={FirstSceneTea}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Bed4}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Carpet}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Piano2}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={b5}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Drawer4}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Lamp10}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Taj2}  alt="" className='blendimg'/></div>
+                <div className='imgholder' ><Img src={b1}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"3",gridRow:"1/3"}}><Img src={Wall1}  alt="" className='blendimg'/></div>
+                <div className='imgholder' style={{gridColumn:"1/2"}}><Img src={GlassCop}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"1",gridRow:"3/5"}}><Img src={LargeSpoon}  alt="" className='blendimg'/></div>
+                <div className='imgholder' style={{gridColumn:"2/4",gridRow:"3"}}><Img src={b3}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={M9la}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={knife}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Tbsi2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Spoon1}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"1/4",gridRow:"5/7"}}><Img src={b2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Sinia}  alt="" className='blendimg'/></div>
+                <div className='imgholder '><Img src={Bed1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={CoffCup5}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={CofferGlass2}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"3",gridRow:"9/11"}}><Img src={s1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Mond}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Kas1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Korsy}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={fork}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Lamp9}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Sa7n1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Wall2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={untitled7}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={b4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={photocadre}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={FirstSceneTea}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Bed4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Carpet}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Piano2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={b5}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Drawer4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Lamp10}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Taj2}  alt="" className='blendimg'/></div>
                 
 
               </div>

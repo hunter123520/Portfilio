@@ -9,7 +9,7 @@ import ParticleImage, {
     ParticleForce
   } from "react-particle-image";
 import { Button ,Avatar} from '@mui/material';
-import img from "../Images/Sellami.jpg";
+import img1 from "../Images/Sellami.jpg";
 import me from "../Images/me.png";
 import pythonimg from "../Images/python.png";
 import reactimg from "../Images/react.png";
@@ -94,6 +94,7 @@ import indimg from "../Images/ind.jpg"
 import restimg from "../Images/rest.png"
 import itimg from "../Images/it.png"
 import mlrimg from "../Images/mlr.jpg"
+import Img from 'react-optimized-image';
 const particleOptions = {
     filter: ({ x, y, image }) => {
       // Get pixel
@@ -131,7 +132,7 @@ function HomePage() {
 
                 <div className='imgHolder'>
                     <ParticleImage
-                    src={img}
+                    src={img1}
                     scale={1}
                     entropy={20}
                     maxParticles={4200}
@@ -184,6 +185,10 @@ function HomePage() {
               src={me}
               sx={{ width: 250, height: 250 }}
               />
+              {/* <Img
+              // src={me}
+              src = {me}
+              /> */}
               <div className='d-flex flex-column justify-content-center flex-fill'>
                 <span className='start'>
                 Sellami Mohammed Abdelhadi
@@ -212,22 +217,22 @@ function HomePage() {
                 Hard Skills
                 </span>
                 <div className='d-flex flex-row flex-wrap align-items-center justify-content-center w-100' style={{gap:"10px"}}>
-                <img alt="python" src={pythonimg} className='hardimg'/>
-                <img alt="react" src={reactimg} className='hardimg'/>
-                <img alt="html" src={htmlimg} className='hardimg'/>
-                <img alt="css" src={cssimg} className='hardimg'/>
-                <img alt="js" src={jsimg} className='hardimg'/>
-                <img alt="blender" src={blenderimg} className='hardimg'/>
-                <img alt="c" src={cimg} className='hardimg'/>
-                <img alt="figma" src={figmaimg} className='hardimg'/>
-                <img alt="java" src={javaimg} className='hardimg'/>
-                <img alt="flask" src={flaskimg} className='hardimg'/>
-                <img alt="latex" src={latex} className='hardimg'/>
-                <img alt="numpy" src={numpy} className='hardimg'/>
-                <img alt="pytorch" src={pytorch} className='hardimg'/>
-                <img alt="pandas" src={pandas} className='hardimg'/>
-                <img alt="matplotlib" src={matplotlib} className='hardimg'/>
-                <img alt="scikit" src={scikit} className='hardimg'/>
+                <Img alt="python" src={pythonimg} className='hardimg'/>
+                <Img alt="react" src={reactimg} className='hardimg'/>
+                <Img alt="html" src={htmlimg} className='hardimg'/>
+                <Img alt="css" src={cssimg} className='hardimg'/>
+                <Img alt="js" src={jsimg} className='hardimg'/>
+                <Img alt="blender" src={blenderimg} className='hardimg'/>
+                <Img alt="c" src={cimg} className='hardimg'/>
+                <Img alt="figma" src={figmaimg} className='hardimg'/>
+                <Img alt="java" src={javaimg} className='hardimg'/>
+                <Img alt="flask" src={flaskimg} className='hardimg'/>
+                <Img alt="latex" src={latex} className='hardimg'/>
+                <Img alt="numpy" src={numpy} className='hardimg'/>
+                <Img alt="pytorch" src={pytorch} className='hardimg'/>
+                <Img alt="pandas" src={pandas} className='hardimg'/>
+                <Img alt="matplotlib" src={matplotlib} className='hardimg'/>
+                <Img alt="scikit" src={scikit} className='hardimg'/>
                 </div>
             </Container>
 
@@ -249,7 +254,7 @@ function HomePage() {
                 </span>
 
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={mlrimg}  alt="" className='projectimg'/>
+                  <Img src={mlrimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Malaria Classification using Federated Learning
@@ -267,7 +272,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={cyberimg}  alt="" className='projectimg'/>
+                  <Img src={cyberimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Cyberbullying Detection
@@ -285,7 +290,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={intrimg}  alt="" className='projectimg'/>
+                  <Img src={intrimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Intrusion Detection using Federated Learning
@@ -303,7 +308,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={corrimg}  alt="" className='projectimg'/>
+                  <Img src={corrimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Corrosion Deffect Detection
@@ -321,7 +326,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={earimg}  alt="" className='projectimg'/>
+                  <Img src={earimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Ear Recognition
@@ -339,7 +344,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={medimg}  alt="" className='projectimg'/>
+                  <Img src={medimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Medical Cost Prediction
@@ -357,7 +362,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={babyimg}  alt="" className='projectimg'/>
+                  <Img src={babyimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Baby Crying Classification
@@ -375,7 +380,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={frimg}  alt="" className='projectimg'/>
+                  <Img src={frimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Fruit Ripeness Detection
@@ -393,7 +398,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={egimg}  alt="" className='projectimg'/>
+                  <Img src={egimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         English Sign Language Detection
@@ -412,7 +417,7 @@ function HomePage() {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={arimg}  alt="" className='projectimg'/>
+                  <Img src={arimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                        Arabic Gesture Prediction
@@ -430,7 +435,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={gsimg}  alt="" className='projectimg'/>
+                  <Img src={gsimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Gestational Diabetes Classification using Federated Learning
@@ -447,7 +452,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={twimg}  alt="" className='projectimg'/>
+                  <Img src={twimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Tweets Classification
@@ -465,7 +470,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={fcimg}  alt="" className='projectimg'/>
+                  <Img src={fcimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Fake News Classification
@@ -482,7 +487,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={indimg}  alt="" className='projectimg'/>
+                  <Img src={indimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Indian Diabetes Classification
@@ -510,7 +515,7 @@ function HomePage() {
                 </span>
 
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse  projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={pureimg}  alt="" className='projectimg'/>
+                  <Img src={pureimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Pure Energy
@@ -528,7 +533,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={itimg}  alt="" className='projectimg'/>
+                  <Img src={itimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         IT Services Website
@@ -546,7 +551,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={restimg}  alt="" className='projectimg'/>
+                  <Img src={restimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                         Resturant Delevery Website
@@ -564,7 +569,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={algebra}  alt="" className='projectimg'/>
+                  <Img src={algebra}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Easy Algebra
@@ -582,7 +587,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={stringimg}  alt="" className='projectimg'/>
+                  <Img src={stringimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       String Operations
@@ -600,7 +605,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={garbage}  alt="" className='projectimg'/>
+                  <Img src={garbage}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Smart Recycle
@@ -618,7 +623,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={book}  alt="" className='projectimg'/>
+                  <Img src={book}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Book Store
@@ -643,7 +648,7 @@ function HomePage() {
                 Design projects
                 </span>
                 <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={buss}  alt="" className='projectimg'/>
+                  <Img src={buss}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Buss Application
@@ -662,7 +667,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={roll}  alt="" className='projectimg'/>
+                  <Img src={roll}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Rolling wheel
@@ -682,7 +687,7 @@ function HomePage() {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={loginimg}  alt="" className='projectimg'/>
+                  <Img src={loginimg}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       School Login
@@ -701,7 +706,7 @@ function HomePage() {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={timetable}  alt="" className='projectimg'/>
+                  <Img src={timetable}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       School Time Management
@@ -721,7 +726,7 @@ function HomePage() {
 
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={signin}  alt="" className='projectimg'/>
+                  <Img src={signin}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Signin / Signup Pages
@@ -748,7 +753,7 @@ function HomePage() {
 
 
                 <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={privateschool}  alt="" className='projectimg'/>
+                  <Img src={privateschool}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Private School Manager
@@ -765,7 +770,7 @@ function HomePage() {
                </div>
 
                <div className='d-flex flex-row align-items-center justify-content-center flex-row-reverse projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={systemexpert}  alt="" className='projectimg'/>
+                  <Img src={systemexpert}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       System Expert Manager
@@ -781,7 +786,7 @@ function HomePage() {
                 
 
                <div className='d-flex flex-row align-items-center justify-content-center projectHolder ' style={{gap:"25px",width:"85%"}}>
-                  <img src={comp}  alt="" className='projectimg'/>
+                  <Img src={comp}  alt="" className='projectimg'/>
                   <div className='d-flex flex-column align-items-center justify-content-center projectcontent h-100' style={{gap:"10px",width:"50%"}}>
                         <span className='projecttitle'>
                       Simple Compilation System
@@ -804,39 +809,39 @@ function HomePage() {
                 Blender projects
                 </span>
               <div className=' justify-content-center blendparent' style={{gap:"25px",width:"100%"}}>
-                <div className='imgholder' ><img src={b1}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"3",gridRow:"1/3"}}><img src={Wall1}  alt="" className='blendimg'/></div>
-                <div className='imgholder' style={{gridColumn:"1/2"}}><img src={GlassCop}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"1",gridRow:"3/5"}}><img src={LargeSpoon}  alt="" className='blendimg'/></div>
-                <div className='imgholder' style={{gridColumn:"2/4",gridRow:"3"}}><img src={b3}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={M9la}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={knife}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Tbsi2}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Spoon1}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"1/4",gridRow:"5/7"}}><img src={b2}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Sinia}  alt="" className='blendimg'/></div>
-                <div className='imgholder '><img src={Bed1}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={CoffCup5}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={CofferGlass2}  alt="" className='blendimg'/></div>
-                <div className='imgholder double' style={{gridColumn:"3",gridRow:"9/11"}}><img src={s1}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Mond}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Kas1}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Korsy}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={fork}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Lamp9}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Sa7n1}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Wall2}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={untitled7}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={b4}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={photocadre}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={FirstSceneTea}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Bed4}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Carpet}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Piano2}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={b5}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Drawer4}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Lamp10}  alt="" className='blendimg'/></div>
-                <div className='imgholder'><img src={Taj2}  alt="" className='blendimg'/></div>
+                <div className='imgholder' ><Img src={b1}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"3",gridRow:"1/3"}}><Img src={Wall1}  alt="" className='blendimg'/></div>
+                <div className='imgholder' style={{gridColumn:"1/2"}}><Img src={GlassCop}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"1",gridRow:"3/5"}}><Img src={LargeSpoon}  alt="" className='blendimg'/></div>
+                <div className='imgholder' style={{gridColumn:"2/4",gridRow:"3"}}><Img src={b3}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={M9la}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={knife}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Tbsi2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Spoon1}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"1/4",gridRow:"5/7"}}><Img src={b2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Sinia}  alt="" className='blendimg'/></div>
+                <div className='imgholder '><Img src={Bed1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={CoffCup5}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={CofferGlass2}  alt="" className='blendimg'/></div>
+                <div className='imgholder double' style={{gridColumn:"3",gridRow:"9/11"}}><Img src={s1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Mond}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Kas1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Korsy}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={fork}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Lamp9}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Sa7n1}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Wall2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={untitled7}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={b4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={photocadre}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={FirstSceneTea}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Bed4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Carpet}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Piano2}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={b5}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Drawer4}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Lamp10}  alt="" className='blendimg'/></div>
+                <div className='imgholder'><Img src={Taj2}  alt="" className='blendimg'/></div>
                 
 
               </div>

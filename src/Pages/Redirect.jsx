@@ -2,6 +2,7 @@ import React , {useState,useEffect} from 'react'
 import error_image from "../Images/Error.png"
 import "../Styles/Redirect.css"
 import { useNavigate } from "react-router-dom";
+import Img from 'react-optimized-image';
 const RedirectPage = () => {
     const [timeLeft, setTimeLeft] = useState(5);
     const navigate = useNavigate();
@@ -41,7 +42,7 @@ useEffect(() => {
             </div>
         </div>
         <div className='ImageContainer'>
-            <img src={error_image} alt="logo" />
+            <Img src={error_image} alt="logo" />
         </div>
         
     </div>
